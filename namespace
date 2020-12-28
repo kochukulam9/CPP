@@ -1,0 +1,21 @@
+#include <iostream> 
+using namespace std; 
+
+namespace n1
+{
+    int value()
+    {return 150;}
+}
+
+namespace n2 
+{
+    int value()
+    {return 120;}
+}
+
+int main() 
+{ 
+    //Access value function within ns1
+    cout <<n1::value() << '\n';
+    cout <<n2::value() << '\n';
+} 
